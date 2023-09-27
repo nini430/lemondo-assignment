@@ -3,7 +3,8 @@ $colors: (
   "red": #ff4d4d,
   "dark-gray": #696974,
   "white":#ffffff,
-  "green":#99CC66
+  "green":#99CC66,
+  "dark":"#171D25"
 );
 
 @each $k,$v in $colors {

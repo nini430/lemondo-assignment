@@ -1,0 +1,74 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+
+  .filter-search {
+    border: 2px solid $base-border-color;
+    border-radius: 10px;
+    height: 60px;
+    outline: none;
+    padding: 0 10px;
+    font-size: $base-font-size;
+
+    &::placeholder {
+      color: $base-placeholder-color;
+    }
+  }
+
+  .attributes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .attribute {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .input-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+
+        input {
+          height: 44px;
+          padding: 5px;
+          border-radius: 10px;
+          border: 1px solid $base-border-color;
+          outline: none;
+        }
+
+        .font-lari {
+          font: normal normal normal 14px/19px Lari Symbol V2;
+        }
+      }
+    }
+  }
+
+  .categories {
+    margin-top: 20px;
+    .category-row {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      .category {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .checkbox {
+          accent-color: $main-green;
+          color: white;
+          border: 1px solid $base-border-color;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+ 
+}

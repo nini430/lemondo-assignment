@@ -25,6 +25,63 @@
   opacity: 0;
 }
 
+input[type=checkbox]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 1.2ex;
+  height: 0.4ex;
+  background: rgba(0, 0, 0, 0);
+  top: 0.9ex;
+  left: 0.5ex;
+  border: 3px solid white;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+input[type=checkbox] {
+  line-height: 2.1ex;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  position: absolute;
+  left: -999em;
+}
+
+input[type=checkbox] + label {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+input[type=checkbox] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: -25%;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #E5E5ED;
+  margin-right: 0.5em;
+}
+
+input[type=checkbox]:checked + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: -25%;
+  height: 20px;
+  width: 20px;
+  background-color: #99CC66;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+
 .font-bold {
   font-weight: 600;
 }
@@ -438,6 +495,14 @@ body {
   background-color: #99CC66;
 }
 
+.text-dark {
+  color: "#171D25";
+}
+
+.bg-dark {
+  background-color: "#171D25";
+}
+
 .icon {
   display: flex;
   justify-content: center;
@@ -614,4 +679,68 @@ body {
 .sidebar .filter {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.0588235294);
   font-weight: 600;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+}
+.filters .filter-search {
+  border: 2px solid #E5E5ED;
+  border-radius: 10px;
+  height: 60px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+.filters .filter-search::placeholder {
+  color: #92929D;
+}
+.filters .attributes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.filters .attributes .attribute {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.filters .attributes .attribute .input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.filters .attributes .attribute .input-row input {
+  height: 44px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #E5E5ED;
+  outline: none;
+}
+.filters .attributes .attribute .input-row .font-lari {
+  font: normal normal normal 14px/19px Lari Symbol V2;
+}
+.filters .categories {
+  margin-top: 20px;
+}
+.filters .categories .category-row {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.filters .categories .category-row .category {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.filters .categories .category-row .category .checkbox {
+  accent-color: #99CC66;
+  color: white;
+  border: 1px solid #E5E5ED;
+  width: 20px;
+  height: 20px;
 }
