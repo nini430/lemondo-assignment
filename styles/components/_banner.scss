@@ -1,0 +1,32 @@
+.banner-container {
+  @include xs {
+    padding: 0;
+  }
+
+  @include lg {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  @include xl {
+    padding-top: 30px;
+    padding-left: 288px;
+    padding-right: 288px;
+  }
+}
+
+.banner {
+    
+  @include xs {
+    background: url('../assets/images/banner-mb.png') no-repeat;
+    background-repeat: no-repeat;
+    height: 120px;
+    background-size: cover;
+  }
+  @include lg {
+    border-radius: 15px;
+    background: url('../assets/images/banner.png');
+    background-repeat: no-repeat;
+    height: 180px;
+    background-size: cover;
+  }
+}

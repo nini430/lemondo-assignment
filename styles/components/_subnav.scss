@@ -1,0 +1,9 @@
+.sub-nav {
+    @include xs {
+        display:none;
+    }
+    box-shadow:$base-box-shadow;
+    background:white;
+
+    
+}

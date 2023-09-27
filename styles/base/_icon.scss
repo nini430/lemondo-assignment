@@ -1,0 +1,15 @@
+.icon {
+    @include center-flex;
+    width:50px;
+    height:46px;
+    position:relative;
+};
+
+.icon-amount {
+    background-color: $main-red;
+    top:-8px;
+    right:-8px;
+    font-size:12px;
+    color:white;
+
+}

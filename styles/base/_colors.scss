@@ -1,0 +1,17 @@
+$colors: (
+  "gray": #f1f1f5,
+  "red": #ff4d4d,
+  "dark-gray": #696974,
+  "white":#ffffff,
+  "green":#99CC66
+);
+
+@each $k,$v in $colors {
+    .text-#{$k} {
+        color:$v;
+    };
+
+    .bg-#{$k} {
+        background-color: $v;
+    }
+}

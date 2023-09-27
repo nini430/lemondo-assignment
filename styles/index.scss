@@ -1,6 +1,17 @@
-* {
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
+@import './base/variables';
+@import './base/base';
+@import './base/flex';
+@import './base/breakpoints';
+
+@import './utilities';
+@import './base/colors';
+
+@import './base/icon';
+@import './components/navbar';
+@import './components/subnav';
+@import './components/banner';
+@import './components/sidebar';
+
+
+
 

@@ -1,7 +1,19 @@
+import '../dist/index.css';
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local';
 
-const inter = Inter({ subsets: ['latin'] })
+const tkt=localFont({src:[
+  {
+    path:'../assets/fonts/TKT-Medium.ttf',
+    style:'normal',
+    weight:'500'
+  },
+  {
+    path:'../assets/fonts/TKT-Regular.ttf',
+    style:'normal',
+    weight:'400'
+  }
+]});
 
 export const metadata: Metadata = {
   title: 'Lemondo Domens',
@@ -15,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={tkt.className}>{children}</body>
     </html>
   )
 }

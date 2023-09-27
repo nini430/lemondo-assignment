@@ -1,0 +1,82 @@
+.nav {
+    border-bottom:1px solid $text-gray;
+    background:white;
+
+    @include xs {
+        padding-left:20px;
+        padding-right:20px;
+    }
+    @include lg {
+        padding-left:120px;
+        padding-right:120px;
+    }
+    @include xl {
+        padding-left:288px;
+        padding-right:288px;
+    }
+
+    .logo {
+        @include xs {
+            height:21px;
+            width:122px;
+        }
+        @include lg {
+            height:31px;
+            width:183px;
+        }
+    }
+
+    .lng {
+        @include xs {
+            display:none;
+        }
+
+        @include lg {
+            display:flex;
+        }
+    }
+    .user {
+        @include xs {
+            display:flex;
+        }
+
+        @include lg {
+            display:none;
+        }
+    }
+    
+}
+
+
+
+.nav-dropdown {
+    @include xs {
+        display:none;
+    }
+    @include lg {
+        display:flex;
+    }
+    border:$base-border-thickness solid $text-gray;
+    width:160px;
+    height:46px;
+    border-radius:12px;
+    padding:0 10px;
+}
+
+.down-arrow {
+    margin-left:auto;
+}
+
+.nav-text {
+    font-weight:600;
+    font-size:14px;
+}
+
+.hamburger-menu {
+    @include xs {
+        display:block;
+    }
+    @include lg {
+        display:none;
+    }
+}

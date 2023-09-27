@@ -1,0 +1,140 @@
+$utilities: (
+  'padding': (
+    'prefix': 'p',
+    'values': (
+      '0': 0,
+      '1': $base-padding,
+      '2': $base-padding * 2,
+      '3': $base-padding * 4,
+      '4': $base-padding * 6,
+      '5': $base-padding * 8,
+      '6': $base-padding * 10,
+      '7': $base-padding * 12,
+      '8': $base-padding * 14,
+      '9': $base-padding * 16,
+      '10': $base-padding * 18,
+    ),
+  ),
+  'padding-left': (
+    'prefix': 'pl',
+    'values': (
+      '0': 0,
+      '1': $base-padding,
+      '2': $base-padding * 2,
+      '3': $base-padding * 4,
+      '4': $base-padding * 6,
+      '5': $base-padding * 8,
+      '6': $base-padding * 10,
+      '7': $base-padding * 12,
+      '8': $base-padding * 14,
+      '9': $base-padding * 16,
+      '10': $base-padding * 18,
+    ),
+  ),
+  'padding-right': (
+    'prefix': 'pr',
+    'values': (
+      '0': 0,
+      '1': $base-padding,
+      '2': $base-padding * 2,
+      '3': $base-padding * 4,
+      '4': $base-padding * 6,
+      '5': $base-padding * 8,
+      '6': $base-padding * 10,
+      '7': $base-padding * 12,
+      '8': $base-padding * 14,
+      '9': $base-padding * 16,
+      '10': $base-padding * 18,
+    ),
+  ),
+  'padding-top': (
+    'prefix': 'pt',
+    'values': (
+      '0': 0,
+      '1': $base-padding,
+      '2': $base-padding * 2,
+      '3': $base-padding * 4,
+      '4': $base-padding * 6,
+      '5': $base-padding * 8,
+      '6': $base-padding * 10,
+      '7': $base-padding * 12,
+      '8': $base-padding * 14,
+      '9': $base-padding * 16,
+      '10': $base-padding * 18,
+    ),
+  ),
+  'height': (
+    'prefix': 'h',
+    'values': (
+      '0': 0,
+      '1': $base-height,
+      '2': $base-height * 2,
+      '3': $base-height * 3,
+      '4': $base-height * 4,
+      '5': $base-height * 5,
+      '6': $base-height * 6,
+      '7': $base-height * 7,
+      '8': $base-height * 8,
+      '9': $base-height * 9,
+      '10': $base-height * 10,
+      '15': $base-height * 15,
+      '20': $base-height * 20,
+    ),
+  ),
+  'width': (
+    'prefix': 'w',
+    'values': (
+      '0': 0,
+      '1': $base-width,
+      '2': $base-width * 2,
+      '3': $base-width * 3,
+      '4': $base-width * 4,
+      '5': $base-width * 5,
+      '6': $base-width * 6,
+      '7': $base-width * 7,
+      '8': $base-width * 8,
+      '9': $base-width * 9,
+      '10': $base-width * 10,
+      '20': $base-width * 20,
+    ),
+  ),
+  'gap': (
+    'prefix': 'g',
+    'values': (
+      '0': 0,
+      '1': $base-width,
+      '2': $base-width * 2,
+      '3': $base-width * 3,
+      '4': $base-width * 4,
+      '5': $base-width * 5,
+      '6': $base-width * 6,
+      '7': $base-width * 7,
+      '8': $base-width * 8,
+      '9': $base-width * 9,
+      '10': $base-width * 10,
+      '20': $base-width * 20,
+    ),
+  ),
+  "font-size": (
+    "prefix": "font",
+    "values": (
+      "sm": $font-size-sm,
+      "md": $base-font-size,
+      "lg": $font-size-lg,
+      "xl": $font-size-xl,
+      "xxl": $font-size-xxl
+    )
+  )
+);
+
+
+@each $property, $map in $utilities {
+  $prefix: map-get($map, 'prefix');
+  $values: map-get($map, 'values');
+
+  @each $k, $v in $values {
+    .#{$prefix}-#{$k} {
+      #{$property}: $v;
+    }
+  }
+}
