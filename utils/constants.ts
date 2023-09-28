@@ -20,7 +20,7 @@ const subnavLeft = [
 
 const subnavRight = ['ჩვენს შესახებ', 'ფასები', 'ბლოგი', 'დახმარება'];
 
-const categories = [
+const categoriesData = [
   'ბიზნესი',
   'უძრავი ქონება',
   'ავტო',
@@ -32,7 +32,6 @@ const categories = [
   'განათლება',
   'კომერცია',
   'ფინანსები',
-  'ბიზნესი',
 ];
 
 const domeneZones = [
@@ -44,4 +43,30 @@ const domeneZones = [
   '.school.ge',
 ];
 
-export { dummySelectOptions, subnavLeft, subnavRight, categories, domeneZones };
+const filterOptions = [
+  {
+    label: 'დამატების თარიღით',
+    id: 'addedTime',
+  },
+  {
+    label: 'ვადის ამოწურვით',
+    id: 'expiredDate',
+  },
+  {
+    label: 'ფასით',
+    id: 'price',
+  },
+  {
+    label: 'ანბანით',
+    id: 'name',
+  },
+];
+
+export {
+  dummySelectOptions,
+  subnavLeft,
+  subnavRight,
+  categoriesData,
+  domeneZones,
+  filterOptions,
+};

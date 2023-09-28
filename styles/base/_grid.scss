@@ -1,0 +1,144 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 40px;
+  padding-bottom: 30px;
+
+  @include xs {
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: 1fr;
+  }
+  @include lg {
+    padding-left: 120px;
+    padding-right: 120px;
+    grid-template-columns: 1fr;
+  }
+  @include xl {
+    padding-left: 288px;
+    padding-right: 288px;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .grid-left {
+    display: flex;
+    flex-direction: column;
+
+    .market {
+      @include xs {
+        display: none;
+      }
+
+      @include xl {
+        display: flex;
+      }
+    }
+    .list {
+      background: white;
+      border: 1px solid $base-grid-border-color;
+      border-radius: 15px;
+
+      @include xs {
+        display: none;
+      }
+
+      @include xl {
+        display: flex;
+      }
+    }
+  }
+
+  .grid-right {
+    display: flex;
+    flex-direction: column;
+
+    .sort-menu {
+      @include xs {
+        display: none;
+      }
+
+      @include xl {
+        display: flex;
+      }
+    }
+
+    .input-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      @include xs {
+        display:flex;
+      }
+
+      @include xl {
+        display:none;
+      }
+
+      .base-input {
+        border:1px solid $base-border-color;
+        border-radius:10px;
+        background:white;
+        height:40px;
+        width:160px;
+        padding:0 10px;
+        display:flex;
+        align-items:center;
+
+        input,select {
+          border:0;
+          width:100%;
+          background:transparent;
+          outline:none;
+          background:white;
+          height:100%;
+        }
+        
+      }
+    }
+
+    .list {
+      background: white;
+      border: 1px solid $base-grid-border-color;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+
+      .domen {
+        border-bottom: 1px solid $base-border-color;
+        padding-bottom: 15px;
+
+        .domen-sub {
+          display: flex;
+          align-items: center;
+
+          @include xs {
+            gap: 4px;
+          }
+
+          @include xl {
+            gap: 20px;
+          }
+        }
+        .add-cart {
+          padding: 10px;
+          background-color: $main-green;
+          border-radius: 10px;
+          @include flex;
+          transition: all 0.3s ease;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+
+        .in-cart {
+          border-radius: 10px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

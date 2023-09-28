@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "aleksishvili.org.ge",
+    "price": 10000,
+    "addedTime": "2023-01-01",
+    "expiredDate": "2024-01-01",
+    "zone": ".org.ge",
+    "category": "ბიზნესი"
+  },
+  {
+    "id": 2,
+    "name": "barabadze.net.ge",
+    "price": 20000,
+    "addedTime": "2023-01-01",
+    "expiredDate": "2024-01-01",
+    "zone": ".net.ge",
+    "category": "უძრავი ქონება"
+  },
+  {
+    "id": 3,
+    "name": "cagareli.org.ge",
+    "price": 40000,
+    "addedTime": "2023-01-01",
+    "expiredDate": "2024-01-01",
+    "zone": ".org.ge",
+    "category": "ავტო"
+  },
+  {
+    "id": 4,
+    "name": "gogatishvili.org.ge",
+    "price": 70000,
+    "addedTime": "2023-01-01",
+    "expiredDate": "2024-01-01",
+    "zone": ".org.ge",
+    "category": "ბიზნესი"
+  },
+  {
+    "id": 5,
+    "name": "kevkhishvili.school.ge",
+    "price": 100000,
+    "addedTime": "2023-01-01",
+    "expiredDate": "2024-01-01",
+    "zone": ".school.ge",
+    "category": "ბიზნესი"
+  },
+  {
+    "id": 6,
+    "name": "nadiradze.org.ge",
+    "price": 40000,
+    "addedTime": "2023-01-01",
+    "expiredDate": "2024-01-01",
+    "zone": ".org.ge",
+    "category": "განათლება"
+  },
+  {
+    "id": 7,
+    "name": "edisherashvili.edu.ge",
+    "price": 40000,
+    "addedTime": "2023-01-01",
+    "expiredDate": "2024-01-01",
+    "zone": ".edu.ge",
+    "category": "ფინანსები"
+  },
+  {
+    "id": 8,
+    "name": "barbaqadze.org.ge",
+    "price": 60000,
+    "addedTime": "2023-01-01",
+    "expiredDate": "2024-01-01",
+    "zone": ".org.ge",
+    "category": "მედია"
+  },
+  {
+    "id": 9,
+    "name": "mikiashvili.net.ge",
+    "price": 40000,
+    "addedTime": "2023-01-01",
+    "expiredDate": "2024-01-01",
+    "zone": ".net.ge",
+    "category": "მედიცინა"
+  },
+  {
+    "id": 10,
+    "name": "lortkifanidze.org.ge",
+    "price": 40000,
+    "addedTime": "2023-01-01",
+    "expiredDate": "2024-01-01",
+    "zone": ".org.ge",
+    "category": "ბიზნესი"
+  },
+  {
+    "id": 11,
+    "name": "ashkareli.org.ge",
+    "price": 400000,
+    "addedTime": "2023-01-01",
+    "expiredDate": "2022-01-01",
+    "zone": ".org.ge",
+    "category": "ბიზნესი"
+  },
+  {
+    "id": 12,
+    "name": "vachnadze.org.ge",
+    "price": 50000,
+    "addedTime": "2022-01-01",
+    "expiredDate": "2024-01-01",
+    "zone": ".org.ge",
+    "category": "ბიზნესი"
+  }
+]
