@@ -50,8 +50,6 @@ const DomainTable = () => {
           )
         );
       }
-
-      console.log(storeData);
     }
   }, [setItems, selectedFilter, storeData]);
   if (!isMounted) return null;
